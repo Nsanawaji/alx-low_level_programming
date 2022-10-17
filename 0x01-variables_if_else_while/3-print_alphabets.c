@@ -8,19 +8,23 @@
  */
 int main(void)
 {
-	char alph;
+	char alph = 'a';
+	char ALPH = 'A';
 
+	/* Prints a - z*/
 	while (alph <= 'z')
 	{
-		alph++;
 		putchar(alph);
+		++alph;
 	}
-	return (0);
-	while (alph <= 'Z')
+
+	/* Prints A-Z*/
+	while (ALPH <= 'Z')
 	{
-		alph++;
-		putchar(alph);
-		putchar('\n');
+		putchar(ALPH);
+		++ALPH;
 	}
+		putchar('\n');
+
 	return (0);
 }
