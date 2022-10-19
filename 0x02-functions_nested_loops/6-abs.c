@@ -20,5 +20,9 @@ int _abs(int a)
 	{
 	absvalue = a * (-1);
 	}
+	else
+	{
+	absvalue = 0;
+	}
 	return (absvalue);
 }
