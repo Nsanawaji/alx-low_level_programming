@@ -1,11 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
-int main(void)
+/**
+*swap_int - function that swaps the value of integers
+*@a: First integer
+*@b: Second integer
+*Return: Nothing
+*/
+
+void swap_int(int *a, int *b)
 {
-        int x = 0;
+	int c;
 
-        while (++x)
-                printf("%d", x);
-	printf("\n");
-        return (0);
+	c = *a;
+	*a = *b;
+	*b = c;
 }
